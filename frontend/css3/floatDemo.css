@@ -1,0 +1,38 @@
+header,
+article,
+aside,
+nav,
+footer,
+section {
+  display: block;
+}
+
+body {
+  width: 400px;
+  margin: 0 auto;
+}
+
+header {
+  height: 50px;
+  background-color: yellow;
+}
+
+footer {
+  height: 50px;
+  background-color: pink;
+  clear: both;
+}
+
+article {
+  height: 200px;
+  width: 250px;
+  background-color: cyan;
+  float: left;
+}
+
+aside {
+  width: 150px;
+  height: 200px;
+  background-color: orange;
+  float: right;
+}

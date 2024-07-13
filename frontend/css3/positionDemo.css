@@ -1,0 +1,36 @@
+* {
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* height: 100px; */
+}
+
+.parent {
+  background-color: blue;
+  height: 20em;
+  margin: 1.3rem;
+}
+
+.child-one {
+  background-color: red;
+  height: 5rem;
+  width: 5rem;
+}
+
+.child-two {
+  background-color: green;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top:0rem;
+}
+
+.child-three {
+  background-color: yellow;
+  height: 5rem;
+  width: 5rem;
+}

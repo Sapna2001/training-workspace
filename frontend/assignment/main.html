@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container" id="navbar">
+        <div class="logo">
+          <img class="nav_logo" src="./media/logo.png" alt="logo" />
+        </div>
+        <nav class="menu">
+          <a class="nav_links" href="">Premium</a>
+          <a class="nav_links" href="">Support</a>
+          <a class="nav_links" href="">Download</a>
+          <a class="nav_links" href="">Sign Up</a>
+          <a class="nav_links" href="">Login</a>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="mobileView()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <button class="semi-circle1"></button>
+    <button class="semi-circle2"></button>
+    <button class="semi-circle3"></button>
+
+    <main>
+      <section class="banner">
+        <h1>Learning is<br />everything</h1>
+        <p>Millions of songs and podcasts. No credit card needed.</p>
+        <button class="btn">GET SPOTIFY FREE</button>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer_container">
+        <div class="footer1">
+          <div class="company">
+            <h4>COMPANY</h4>
+            <ul>
+              <li>About</li>
+              <li>Jobs</li>
+              <li>For the Record</li>
+            </ul>
+          </div>
+          <div class="communities">
+            <h4>COMMUNITIES</h4>
+            <ul>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Investors</li>
+              <li>Vendors</li>
+            </ul>
+          </div>
+          <div class="useful-links">
+            <h4>USEFUL LINKS</h4>
+            <ul>
+              <li>Support</li>
+              <li>Web Player</li>
+              <li>Free Mobile App</li>
+            </ul>
+          </div>
+          <div class="extras">
+            <ul>
+              <li>Legal</li>
+              <li>Privacy Center</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+              <li>About Ads</li>
+              <li>Additional CA Privacy Disclosures</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer2">
+          <div class="social">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook-f"></i>
+          </div>
+          <div class="location">
+            <i class="fa fa-globe-europe"></i>
+            <span>USA</span>
+          </div>
+          <div>
+            <span>© 2024 IBM</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script>
+      function mobileView() {
+        var x = document.getElementById("navbar");
+        if (x.className === "container") {
+          x.className += " responsive";
+        } else {
+          x.className = "container";
+        }
+      }
+    </script>
+  </body>
+</html>

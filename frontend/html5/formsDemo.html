@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav row center-xs middle-md">
+          <div class="col-xs-12 col-md-3">
+            <a href="index.html"
+              ><img class="logo" src="images/bee-logo.png" alt=""
+            /></a>
+          </div>
+          <ul class="col-xs-12 col-md-8 col-md-offset-1">
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="donate"><a href="donate.html">Donate Now</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main>
+        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+            <legend>Contact Information</legend>
+            <p>
+            <label for="nameField">*Your name: </label>
+            <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+            </p>
+            <p>
+            <label for="customerEmail">Your email: </label>
+            <input type="email" name="customerEmail" id="customerEmail">
+            </p>
+            <p><label for="customerPhone">Your phone: </label>
+            <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone"></p>
+            <p>
+            <label>Phone type: </label>
+            </p>
+            
+            <label><input type="radio" name="phoneType" value="cell">Cell</label>
+            <label><input type="radio" name="phoneType" value="work">Work</label>
+            <label><input type="radio" name="phoneType" value="home">Home</label>
+            <p>
+            Ok to contact me:
+            <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+            <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+            
+            </p>
+            </fieldset>
+            
+            <input type="hidden" name="source" value="ContactForm">
+            <fieldset>
+            <legend>Feedback</legend>
+            <p>
+            <textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
+            </p>
+            <p>
+            <label for="feedbackType">Feedback type: </label>
+            <select tabindex="2" name="feedbackType"
+            multiple="multiple" size="5" id="feedbackType">
+            <optgroup label="Stores">
+            <option value="webstore">Web Store</option>
+            <option value="store">Physical Store</option>
+            </optgroup>
+            <option value="webtech">Website Issue</option>
+            <option value="general">General Feedback</option>
+            </select>
+            </p>
+            
+            <p><label for="severityRange">Severity: </label>
+            <input tabindex="3" type="range" min="1" max="10" name="severityRange" id="severityRange">
+            </p>
+            <p><label for="severity">Severity: </label>
+            <input tabindex="4" type="number" min="1" max="10" name="severity" id="severity"></label>
+            </p>
+            <p>
+            <label for="issueDate">Issue date: </label>
+            <input tabindex="5" type="date" name="issueDate" id="issueDate">
+            </p>
+            <p>
+            <label for="issueTime">Issue time: </label>
+            <input tabindex="6" type="time" name="issueTime" id="issueTime">
+            </p>
+            
+            </fieldset>
+            <input type="submit" value="SendContact">
+            </form>
+      </main>
+  
+      <footer class="row footer middle-xs center-xs">
+        <div class="col-xs-12">
+          <p>
+            <small
+              >All content on this site is &copy; National Society for Bee
+              Protection</small
+            >
+          </p>
+          <address>
+            <p>2026 IBM INC</p>
+            <p>BCIT Bengaluru 560092</p>
+          </address>
+        </div>
+      </footer>
+</body>
+</html>

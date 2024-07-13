@@ -1,0 +1,32 @@
+.container {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.items {
+  border-radius: 3px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.item1 {
+  background-color: red;
+}
+
+.item2 {
+  background-color: green;
+}
+
+.item3 {
+  background-color: yellow;
+}
+
+.item4 {
+  background-color: rgb(47, 89, 88);
+}
+
+.item5 {
+  background-color: blue;
+}
